@@ -5,8 +5,7 @@ import useTest from '../hooks/useTest'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
-
-  const {current, next, correct, isLastQuestion, position, total} = useTest()
+  const {current, next, correct, isLastQuestion, position, total, corrections} = useTest()
   const [selected, setSelected] = useState()
 
   const handleChange = (_, value) => {
@@ -44,7 +43,7 @@ export default function Home() {
               : <Test.Next onClick={handleNext}>Siguiente</Test.Next>
           }
         </Test.Actions>
-      </Test>      
+      </Test>
     </div>
   )
 }

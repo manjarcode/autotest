@@ -13,7 +13,7 @@ export default function useTest() {
   const [total, setTotal] = useState(initialIndex)
   const [current, setCurrent] = useState(emptyQuestion)
   const [givenAnswers, setGivenAnswers] = useState([])
-
+  const [corrections, setCorrections] = useState([])
   const isLastQuestion = position + 1 == test.questions.length
 
   useEffect(() => {
@@ -39,7 +39,23 @@ export default function useTest() {
   }
 
   function correct() {
+    const currentCorrections = []
+    const {questions} = test
+    givenAnswers.forEach((given, index)=> {
+      const question = questions[index]
+      const {answers} = question
+      
+      const currentAnswer = answers.find(item => item.value === given)
 
+      if (currentAnswer.isCorrect) {
+        currentCorrections.push({
+          given,
+          question
+        })
+      }
+    })
+
+    setCorrections(currentCorrections)
   }
 
   return {
@@ -49,6 +65,7 @@ export default function useTest() {
     isLastQuestion,
     givenAnswers,
     position: position + 1,
-    total
+    total,
+    corrections
   }
 }
