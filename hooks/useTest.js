@@ -1,9 +1,10 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
+import {useEffect, useState} from 'react'
+
+import axios from 'axios'
 
 const initialIndex = 0
 const emptyQuestion = {
-  question:'',
+  question: '',
   answers: []
 }
 
@@ -14,40 +15,38 @@ export default function useTest() {
   const [current, setCurrent] = useState(emptyQuestion)
   const [givenAnswers, setGivenAnswers] = useState([])
   const [corrections, setCorrections] = useState([])
-  const isLastQuestion = position + 1 == test.questions.length
+  const isLastQuestion = position + 1 >= test.questions.length
 
   useEffect(() => {
-    axios.get('/api/get-test').then
-      (({data}) => {
-        setTest(data)
-        setCurrent(data.questions[initialIndex])
-        setTotal(data.questions.length)
-      })
-    }, [])
+    axios.get('/api/get-test').then(({data}) => {
+      setTest(data)
+      setCurrent(data.questions[initialIndex])
+      setTotal(data.questions.length)
+    })
+  }, [])
 
-  function next(answer) {
-    if (isLastQuestion) throw new Error('The test is finished')
-
+  function next(answer, isLastQuestion) {
     const nextIndex = position + 1
     setPosition(nextIndex)
     setCurrent(test.questions[nextIndex])
 
-    setGivenAnswers(value => {
-      value[position] = answer
-      return value
-    })
+    givenAnswers[position] = answer
+    setGivenAnswers(givenAnswers)
+    if (isLastQuestion) {
+      correct(givenAnswers)
+    }
   }
 
-  function correct() {
+  function correct(givenAnswers) {
     const currentCorrections = []
     const {questions} = test
-    givenAnswers.forEach((given, index)=> {
+    givenAnswers.forEach((given, index) => {
       const question = questions[index]
       const {answers} = question
-      
+
       const currentAnswer = answers.find(item => item.value === given)
 
-      if (currentAnswer.isCorrect) {
+      if (!currentAnswer.isCorrect) {
         currentCorrections.push({
           given,
           question
