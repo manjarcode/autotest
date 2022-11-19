@@ -1,14 +1,14 @@
 import {useState} from 'react'
 
-import Corrections from '../components/corrections/corrections'
-import Question from '../components/question/question'
-import Test from '../components/test/test'
-import useTest from '../hooks/useTest'
+import Corrections from '../components/corrections/corrections.js'
+import Question from '../components/question/question.js'
+import Test from '../components/test/test.js'
+import useTest from '../hooks/useTest.js'
 
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
-  const {current, next, correct, isLastQuestion, position, total, corrections} =
+  const {current, next, isLastQuestion, position, total, corrections} =
     useTest()
   const [selected, setSelected] = useState()
 

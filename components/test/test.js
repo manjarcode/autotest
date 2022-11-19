@@ -1,19 +1,33 @@
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import FormControl from '@mui/material/FormControl';
-import Button from '@mui/material/Button';
-import { Box } from '@mui/system';
+import PropTypes from 'prop-types'
+
+import Button from '@mui/material/Button'
+import Card from '@mui/material/Card'
+import CardActions from '@mui/material/CardActions'
+import CardContent from '@mui/material/CardContent'
+import FormControl from '@mui/material/FormControl'
+import {Box} from '@mui/system'
 
 export default function Test({children}) {
-  return <FormControl>
-    <Card>
-      {children}
-    </Card>
-  </FormControl>
+  return (
+    <FormControl>
+      <Card>{children}</Card>
+    </FormControl>
+  )
+}
+Test.propTypes = {
+  children: PropTypes.node
 }
 
-const Counter = ({index, total}) => <Box>{index} / {total}</Box>
+const Counter = ({index, total}) => (
+  <Box>
+    {index} / {total}
+  </Box>
+)
+Counter.propTypes = {
+  index: PropTypes.number,
+  total: PropTypes.number
+}
+
 const Content = props => <CardContent {...props} />
 const Actions = props => <CardActions {...props} />
 const Next = props => <Button {...props} />
