@@ -1,5 +1,3 @@
-import '../data/plain.js'
-
 import {useState} from 'react'
 
 import Corrections from '../components/corrections/corrections.js'

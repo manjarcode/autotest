@@ -2,8 +2,6 @@ import PropTypes from 'prop-types'
 
 import {Typography} from '@mui/material'
 import Button from '@mui/material/Button'
-import CardActions from '@mui/material/CardActions'
-import CardContent from '@mui/material/CardContent'
 import FormControl from '@mui/material/FormControl'
 import {Box} from '@mui/system'
 
