@@ -8,7 +8,7 @@ const emptyQuestion = {
   answers: []
 }
 
-export default function useTest() {
+export default function useExam() {
   const [test, setTest] = useState({questions: []})
   const [position, setPosition] = useState(initialIndex)
   const [total, setTotal] = useState(initialIndex)
@@ -18,7 +18,7 @@ export default function useTest() {
   const isLastQuestion = position + 1 >= test.questions.length
 
   useEffect(() => {
-    axios.get('/api/get-test').then(({data}) => {
+    axios.get('/api/get-exam').then(({data}) => {
       setTest(data)
       setCurrent(data.questions[initialIndex])
       setTotal(data.questions.length)
@@ -38,8 +38,10 @@ export default function useTest() {
   }
 
   function correct(givenAnswers) {
-    const currentCorrections = []
+    const wrongAnswers = []
     const {questions} = test
+
+    let score = 0
     givenAnswers.forEach((given, index) => {
       const question = questions[index]
       const {answers} = question
@@ -47,14 +49,22 @@ export default function useTest() {
       const currentAnswer = answers.find(item => item.value === given)
 
       if (!currentAnswer.isCorrect) {
-        currentCorrections.push({
+        wrongAnswers.push({
           given,
           question
         })
+      } else {
+        score++
       }
     })
 
-    setCorrections(currentCorrections)
+    setCorrections({
+      score: {
+        value: score,
+        maxScore: givenAnswers.length
+      },
+      wrongAnswers
+    })
   }
 
   return {

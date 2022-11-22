@@ -1,15 +1,15 @@
+import '../data/plain.js'
+
 import {useState} from 'react'
 
 import Corrections from '../components/corrections/corrections.js'
+import Exam from '../components/exam/exam.js'
+import Layout from '../components/layout/layout.js'
 import Question from '../components/question/question.js'
-import Test from '../components/test/test.js'
-import useTest from '../hooks/useTest.js'
-
-import styles from '../styles/Home.module.css'
-
+import useExam from '../hooks/useExam.js'
 export default function Home() {
   const {current, next, isLastQuestion, position, total, corrections} =
-    useTest()
+    useExam()
   const [selected, setSelected] = useState()
 
   const handleChange = (_, value) => {
@@ -24,14 +24,14 @@ export default function Home() {
     next(selected, isLastQuestion)
   }
 
-  const hasCorrections = corrections.length > 0
+  const hasCorrections = Boolean(corrections.score)
 
   return (
-    <div className={styles.container}>
+    <Layout>
       {!hasCorrections && (
-        <Test>
-          <Test.Counter index={position} total={total} />
-          <Test.Content>
+        <Exam>
+          <Exam.Content>
+            <Exam.Counter index={position} total={total} />
             <Question>
               <Question.Title>{current.question}</Question.Title>
               <Question.Answers onChange={handleChange}>
@@ -42,18 +42,23 @@ export default function Home() {
                 ))}
               </Question.Answers>
             </Question>
-          </Test.Content>
-          <Test.Actions>
+          </Exam.Content>
+          <Exam.Actions>
             {isLastQuestion ? (
-              <Test.Correct onClick={handleCorrect}>Corregir</Test.Correct>
+              <Exam.Correct onClick={handleCorrect}>Corregir</Exam.Correct>
             ) : (
-              <Test.Next onClick={handleNext}>Siguiente</Test.Next>
+              <Exam.Next onClick={handleNext}>Siguiente pregunta</Exam.Next>
             )}
-          </Test.Actions>
-        </Test>
+          </Exam.Actions>
+        </Exam>
       )}
 
-      {hasCorrections && <Corrections corrections={corrections} />}
-    </div>
+      {hasCorrections && (
+        <Corrections
+          wrongAnswers={corrections.wrongAnswers}
+          score={corrections.score}
+        />
+      )}
+    </Layout>
   )
 }

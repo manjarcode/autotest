@@ -1,3 +1,8 @@
+.question + .question {
+  border-top: 1px solid #aaaaaa;
+  margin-top: 32px;
+  padding-top: 32px;
+}
 .answer {
   border-radius: 8px;
   padding: 0 8px;

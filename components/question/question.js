@@ -8,7 +8,7 @@ import RadioGroup from '@mui/material/RadioGroup'
 
 import styles from './question.module.scss'
 export default function Question({children}) {
-  return <>{children}</>
+  return <div className={styles.question}>{children}</div>
 }
 
 Question.propTypes = {
