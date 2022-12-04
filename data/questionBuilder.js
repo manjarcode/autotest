@@ -24,7 +24,7 @@ function buildQuestion(question, rightAnswer, ...answers) {
 
 buildQuestion(
   'A qué escuela de pensamiento pertenece la siguiente afirmación: "el objetivo de los cuidados enfermeros consisten en restablecer el equilibrio interno de la persona y conservar la energía"',
-  'A',
+  'B',
   'Escuela de Caring',
   'Escuela de los efectos deseados',
   'Escuela del ser humano humanitario',
@@ -39,36 +39,36 @@ buildQuestion(
   'Salud'
 )
 buildQuestion(
-  'Respecto a los conceptos en términos de sistemas ¿cuál es el concepto en el que consiste en tener en cuenta la globalidad del problema y sus interacciones ?',
+  'Respecto a los conceptos en términos de sistemas ¿cuál es el concepto en el que consiste en tener en cuenta la globalidad del problema y sus interacciones?',
   'C',
-  'Grado de definiciones de un sistema',
+  'Grado de definición de un sistema',
   'Concentración de un sistema',
   'Enfoque sistémico',
   'Grado de integración de un sistema'
 )
 buildQuestion(
   'El modelo de Peplau se centra en...',
-  'A',
+  'B',
   'La importancia de la relación entre enfermera-paciente',
-  'La importancia de la relación entre enfermería y cuidado',
-  'La importancia entre la relación sociedad-salua',
-  'Todas son correctas'
+  'La importancia de la relación entre enfermería-cuidado',
+  'La importancia entre la relación sociedad-salud',
+  'Todas son falsas'
 )
 buildQuestion(
   '¿Cuáles son las principales corrientes del pensamiento?',
   'D',
-  'Paradigma de categorización',
-  'Paradigma de integración',
-  'Paradigma de transformación',
+  'Paradigma de Categorización',
+  'Paradigma de Integración',
+  'Paradigma de Transformación',
   'Todas son correctas'
 )
 buildQuestion(
-  'Según la clasificación de Kerouac sobre las corrientes de pensamientos señale la correcta',
+  'Según la clasificación de Kérouac sobre las corrientes de pensamiento señale la incorrecta',
   'B',
-  'Paradigma integración orientado hacia la persona',
-  'Paradigma de la transformación orientado hacia la salud pública',
-  'Paradigma de categorización orientada hacia la enfermedad y unida a la práctica médica',
-  'Paradigma de transformación orientado hacia el mundo'
+  'Paradigma integración: orientado hacia la persona',
+  'Paradigma de la transformación: orientado hacia la salud pública',
+  'Paradigma de categorización: orientada hacia la enfermedad y unida a la práctica médica',
+  'Paradigma de transformación: orientado hacia el mundo'
 )
 buildQuestion(
   '¿De qué habla Virginia Henderson?',
@@ -81,8 +81,8 @@ buildQuestion(
 buildQuestion(
   '¿Cuál no es un requisito universal del cuidado según Dorothea Orem?',
   'D',
-  'Mantenimiento de un soporte de aire suficiente',
-  'Mantenimiento del equilibrio entre la la actividad y el reposo',
+  'Mantenimiento de un aporte de aire suficiente',
+  'Mantenimiento del equilibrio entre la actividad y el reposo',
   'Mantenimiento de un aporte suficiente de alimentos',
   'Mantenimiento de la temperatura corporal'
 )
@@ -97,13 +97,13 @@ buildQuestion(
 buildQuestion(
   'Con respecto al modelo teórico señale la correcta',
   'B',
-  'Siempre procede de un modelo teórico básico',
-  'Puede evolucionara teoría cuando consigue un respaldo empírico',
+  'Siempre procede de un modelo teórico de base',
+  'Puede evolucionar a teoría cuando consigue un respaldo empírico',
   'Intenta responder a preguntas concretas de la práctica asistencial',
-  'Se desarrollan usando conceptos abstractos relacionados'
+  'Se desarrollan usando conceptos abstractos relacionados que aún no han progresado hacia una teoría'
 )
 buildQuestion(
-  '¿Cuál de la siguientes afirmaciones no es correcta a la hora de hablar de pensamientos?',
+  '¿Cuál de la siguientes afirmaciones no es correcta a la hora de hablar de pensamiento crítico?',
   'C',
   'Es disciplinado y reflexivo',
   'Se guía por códigos éticos',
@@ -111,7 +111,7 @@ buildQuestion(
   'Todas son correctas'
 )
 buildQuestion(
-  'Según la escuela de interacción definida por Kerouac...',
+  'Según la escuela de interacción definida por Kérouac...',
   'B',
   'Los cuidados se orientan hacia la promoción de la salud ',
   'La enfermedad se considera una experiencia humana que puede permitir el crecimiento',
@@ -119,7 +119,7 @@ buildQuestion(
   'La enfermedad desempeña un rol de agente facilitador, estimulador y motivador para el aprendizaje'
 )
 buildQuestion(
-  'Cuál es un rol de enfermería que estableció Callista Roy',
+  '¿Cuál es un rol de enfermería que estableció Callista Roy?',
   'D',
   'Rol extraño',
   'Rol de suministradora de recursos',
@@ -127,7 +127,7 @@ buildQuestion(
   'Los roles los estableció E. Peplau'
 )
 buildQuestion(
-  'Quién refleja el paradigma de la integración',
+  '¿Quién refleja el paradigma de la integración?',
   'A',
   'E. Peplau',
   'Callista Roy',
@@ -135,18 +135,18 @@ buildQuestion(
   'Florence Nightingale'
 )
 buildQuestion(
-  '¿En qué paradigma se considera a la persona como un todo formado por la suma de sus partes sin interacciones entre ellos?',
+  '¿En qué paradigma se considera a la persona como un todo formado por la suma de sus partes sin interrelaciones entre ellos?',
   'A',
-  'Paradigma de la categorización',
-  'Paradigma de la integración',
-  'Paradigma de la transformación',
+  'Paradigma de la Categorización',
+  'Paradigma de la Integración',
+  'Paradigma de la Transformación',
   'Paradigma de Kuhn'
 )
 buildQuestion(
   '¿Cómo podemos clasificar los sistemas?',
   'D',
-  'Por su naturaleza ',
-  'En qué paradigma se considera a la persona como un todo formado por la suma de sus partes sin interacciones entre ellos?',
+  'Por su naturaleza',
+  'Por la predestinación de su comunicación',
   'Por su dependencia',
   'Todas son correctas'
 )
@@ -156,7 +156,7 @@ buildQuestion(
   'Concepción de una disciplina que guía la práctica, la investigación, la docencia, y la gestión',
   'Conocimiento especulativo que intenta explicar o predecir un fenómeno',
   'Perspectiva de un conjunto de una disciplina (conceptos centrales)',
-  'Corriente de pensamiento que influye en los saberes y las disciplinas (experiencias, valores creencias y prácticas)'
+  'Corriente de pensamiento que influye en los saberes y las disciplinas (experiencias, creencias, valores y prácticas)'
 )
 buildQuestion(
   '¿A quién corresponde la teoría de la adaptación?',
@@ -175,23 +175,23 @@ buildQuestion(
   'Enfermería'
 )
 buildQuestion(
-  '¿Que modelo no forma parte del paradigma de la integración?',
-  'D',
+  '¿Qué modelo no forma parte del paradigma de la integración?',
+  'A',
   'Teoría del cuidado transpersonal',
   'Teoría de la adaptación',
   'Teoría de las las relaciones interpersonales',
   'Teoría de las necesidades'
 )
 buildQuestion(
-  '¿Que modelo y paradigma corresponde con Watson?',
+  '¿Qué modelo y paradigma corresponde con Watson?',
   'B',
   'Modelo de roles, paradigma de integración',
-  'Modelo de transpersonalidad paradigma de transformación',
-  'Modelo de transpersonalidad paradigma de integración',
-  'Modelo de autocuidados paradigma de transformación'
+  'Modelo de transpersonalidad, paradigma de transformación',
+  'Modelo de transpersonalidad, paradigma de integración',
+  'Modelo de autocuidados, paradigma de transformación'
 )
 buildQuestion(
-  '¿Que autor clasifica los trabajos los trabajos teóricos enfermeros atendiendo a estas tendencias de pensamiento ecologista, exitencial, cósmico y sociologico?',
+  '¿Que autor clasifica los trabajos teóricos enfermeros atendiendo a estas tendencias de pensamiento ecologista, exitencialista, cósmica y sociológica?',
   'A',
   'Paul Beck',
   'Alberdi et al',
@@ -207,12 +207,12 @@ buildQuestion(
   'De estima'
 )
 buildQuestion(
-  'El modelo de Peplau se centra en...',
+  'Orden de las etapas de la evolución en la interpretación de la salud',
   'B',
-  'Salud como: ausencia de la enfermedad-valore religiosos-supervivencia',
-  'Salud como supervivencia-valor sobrenatural-valor religioso-ausencia de enfermedad-armonía, equilibrio',
-  'Salud como: supervivencia-valor religiosos-valor sobrenatural',
-  'Salud como: armonía, buen estado-valor religioso-ausencia de la enfermedad-valor sobrenatural-supervivencia'
+  'Salud como: ausencia de la enfermedad - valores religiosos - supervivencia',
+  'Salud como: supervivencia - valor sobrenatural - valor religioso - ausencia de enfermedad - armonía, equilibrio',
+  'Salud como: supervivencia - valor religiosos - valor sobrenatural',
+  'Salud como: armonía, buen estado - valor religioso - ausencia de la enfermedad - valor sobrenatural - supervivencia'
 )
 buildQuestion(
   'La epistemología tiene como objetivo de estudio',
@@ -225,15 +225,15 @@ buildQuestion(
 buildQuestion(
   '¿Cuáles son los cinco elementos esenciales de un entorno saludable según Florence Nightingale?',
   'B',
-  'Aislamiento, salubridad, frialdad, desinfección, esterilización',
-  'Aire puro,agua pura,desagües eficaces,limpieza o higiene y luz adecuada',
-  'Aislamiento luz tenue, frialdad, ambiente',
+  'Aislamiento, salubridad, frialdad, desinfección y esterilización',
+  'Aire puro, agua pura, desagües eficaces, limpieza o higiene y luz adecuada',
+  'Aislamiento luz tenue, frialdad, ambiente ruidoso y desorden',
   'Ninguna de las anteriores'
 )
 buildQuestion(
   '¿Cuál de estas no es una escuela de pensamientos?',
   'C',
-  'Escuela de la integración',
+  'Escuela de la interacción',
   'Escuela de caring',
   'Escuela de nursing',
   'Escuela de los efectos deseados'
@@ -247,7 +247,7 @@ buildQuestion(
   'Peplau'
 )
 buildQuestion(
-  'Indique cuál de los modelos de las siguientes autoras no pertenece a la paradigma de la integración ',
+  'Indique cuál de los modelos de las siguientes autoras no pertenece al paradigma de la integración',
   'C',
   'Peplau',
   'Orem',
@@ -255,15 +255,15 @@ buildQuestion(
   'Roy'
 )
 buildQuestion(
-  'En el paradigma de la transformación se entiende como...',
-  'C',
-  'Que es un todo componente biológicos, psicológicos, sociológicos y culturales están interrelacionados',
+  'En el paradigma de la transformación la persona se entiende como...',
+  'D',
+  'Que es un todo, sus componentes biológicos, psicológicos, sociológicos y culturales están interrelacionados',
   'Es un todo formado por la suma de sus partes sin interrelaciones entre ellos',
-  'Ser único cuyas múltiples dimensiones forman una unidad que es indispensable de su universo',
-  'Compuesto físico,emocional,intelectual,y espiritual,con capacidad y responsabilidad para cambiar su situación de salud'
+  'Ser único cuyas múltiples dimensiones forman una unidad, que es indisociable de su universo',
+  'Compuesto físico, emocional, intelectual, y espiritual, con capacidad y responsabilidad para cambiar su situación de salud'
 )
 buildQuestion(
-  'Respecto a la necesidad de autorrealizarse, las conductas descritas por Maslow para las personas para aspirara autorrealizarse son...',
+  'Respecto a la necesidad de autorrealizarse, las conductas descritas por Maslow para las personas para aspirar a autorrealizarse son...',
   'D',
   'Aceptación de los hechos',
   'Resolución de problemas ',
@@ -279,13 +279,12 @@ buildQuestion(
   'Todas pertenecen a las necesidades básicas'
 )
 buildQuestion(
-  '¿Cómo se denomina en el contexto de la dimension cultural?',
+  '¿En qué escuela el cuidado se basa en restablecer el equilibrio interno de la persona y preservar su energía?',
   'A',
   'Escuela de los efectos deseados',
   'Escuela de interacción',
   'Escuela de la promoción de la salud',
-  'Escuela del ser humano',
-  'humano unita'
+  'Escuela del ser humano unitario'
 )
 buildQuestion(
   'El conocimiento científico es...',
@@ -295,16 +294,9 @@ buildQuestion(
   'Acumulativo, acrítico, asistemático',
   'Progresivo, sistemático, universal'
 )
+
 buildQuestion(
-  '¿Quién fundó la enfermería transcultural?',
-  'C',
-  'Peplau',
-  'Lydia Hall',
-  'Leininger',
-  'Orem'
-)
-buildQuestion(
-  'La capacidad de la enfermera para captar la percepción del paciente sobre su situación',
+  'La capacidad de la enfermera para captar la percepción del paciente sobre su situación, ¿cómo se denomina en el contexto de la dimensión cultural?',
   'C',
   'Conciencia cultural',
   'Conocimiento cultural',
@@ -312,7 +304,15 @@ buildQuestion(
   'Habilidad cultural'
 )
 buildQuestion(
-  '¿Cuál no es un concepto metaparadigma?',
+  '¿Quién fundó la "Enfermería transcultural"?',
+  'C',
+  'Peplau',
+  'Lydia Hall',
+  'Leininger',
+  'Orem'
+)
+buildQuestion(
+  '¿Cuál no es un concepto metaparadigmático?',
   'D',
   'Persona',
   'Entorno',
@@ -345,14 +345,14 @@ buildQuestion(
 )
 buildQuestion(
   'Este paradigma define a la persona como ser único cuyas múltiples dimensiones forman una unidad, que es indisociable de su universo con el que tiene una relación de coexistencia',
-  'D',
+  'A',
   'Paradigma de la integración ',
   'Paradigma de categorización',
   'Paradigma universal',
   'Paradigma de la transformación'
 )
 buildQuestion(
-  'Relación la siguiente afirmación con una de las escuelas de pensamiento: el cuidado está centrado en al atención del cuidado humano y transpersonal que busca alcanzar la armonía entre psique cuerpo y espíritu',
+  'Relacióna la siguiente afirmación con una de las escuelas de pensamiento: el cuidado está centrado en al atención del cuidado humano y transpersonal que busca alcanzar la armonía entre psique cuerpo y espíritu',
   'B',
   'Escuela de las necesidades',
   'Escuela de caring',
@@ -363,14 +363,14 @@ buildQuestion(
   '¿Cuál de estas clasificaciones es correcta según su alcance teórico?',
   'C',
   'Filosofía, prácticas y modelos conceptuales',
-  'Teoría de la enfermería paradigma y tendencia humanista',
+  'Teoría de la enfermería, paradigma y tendencia humanista',
   'Filosofía, modelos conceptuales y teorías de la enfermería',
   'Tendencia sociológica, práctica y metaparadigma'
 )
 buildQuestion(
-  '¿Cuál de las siguientes necesidades propuestas no es una de la 14 necesidades básicas mencionadas por virginia Henderson para el cuidado de la salud?',
+  '¿Cuál de las siguientes necesidades propuestas no es una de la 14 necesidades básicas mencionadas por Virginia Henderson para el cuidado de la salud?',
   'B',
-  'Comunicarse con los emas',
+  'Comunicarse con los demás',
   'Entenderse espiritualmente',
   'Moverse y mantener una postura adecuada ',
   'Participar en actividades creativas'
@@ -381,7 +381,7 @@ buildQuestion(
   '10 necesidades fundamentales',
   '10 factores de cuidados',
   '4 modelos de adaptación',
-  '21 problemas de la enfermedad'
+  '21 problemas de la enfermería'
 )
 buildQuestion(
   'La concepción de persona basada en la idea de que un ser único de manera inseparable a su cultura es desarrolla en el modelo de cuidado de...',
@@ -392,23 +392,23 @@ buildQuestion(
   'D. Orem'
 )
 buildQuestion(
-  '¿Cuál de los siguientes modelos no es un modelo de adaptación en el modelo de adaptación de C. Roy?',
+  '¿Cuál de los siguientes modelos no es un modelo de adaptación en el modelo de adaptación de Callista Roy?',
   'D',
   'Modo fisiológico y físico',
   'Modo de autoconcepto',
   'Modo de función de rol',
-  'Modo independiente'
+  'Modo de dependencia'
 )
 buildQuestion(
-  'Dentro de la escuela de pensamiento e la interacción, se incluye el modelo de desarrollo por:',
+  'Dentro de la escuela de pensamiento de la interacción, se incluye el modelo de desarollado por:',
   'C',
   'Callista roy',
   'Virginia Henderson',
   'Hildegard Peplau',
-  'D. Orem'
+  'Dorothea Orem'
 )
 buildQuestion(
-  'Según H Peplau, el rol adoptado por la enfermera durante la fase de identificación del problema del paciente, en el que esta le trata con cortesía puesto que se trata de un desconocido, se refiere al rol ',
+  'Según Peplau, el rol adoptado por la enfermera durante la fase de identificación del problema del paciente, en el que esta le trata con cortesía puesto que se trata de un desconocido, se refiere al rol de:',
   'B',
   'Docente',
   'Extraño',
@@ -416,7 +416,7 @@ buildQuestion(
   'Persona de recurso'
 )
 buildQuestion(
-  'La autora que mostró sus escritos su interés por el control del medio ambiente así como la importancia de la influencia de la naturaleza en la salud de las personas es:',
+  'La autora que mostró en sus escritos su interés por el control del medio ambiente así como la importancia de la influencia de la naturaleza en la salud de las personas es:',
   'C',
   'V. Henderson',
   'H. Peplau',
@@ -436,8 +436,14 @@ buildQuestion(
   'A',
   'Un proceso reparador',
   'Una dolencia, vulnerabilidad',
-  'Lo que puede valorar físicamente y espiritualmente',
+  'Lo que puede valorarse físicamente y espiritualmente',
   'Defecto congénito o adquirido'
 )
-
-console.log('questions', JSON.stringify(questions))
+buildQuestion(
+  'Raile y Marriner, clasifican los trabajos teóricos enfermeros en:',
+  'A',
+  'Filosofías, modelos conceptuales, teorías y teorías intermedias.',
+  'Escuelas: de las necesidades, la interacción, los efectos deseados, la promoción de la salud, del ser humano unitario y del caring',
+  'Paradigmas: categorización, interagración y transformación',
+  'Orientaciones: ecologistas, existencialistas, cosmicas, sociológicas'
+)
