@@ -448,8 +448,7 @@ export const test = {
         {value: 'Escuela de los efectos deseados', isCorrect: true},
         {value: 'Escuela de interacción', isCorrect: false},
         {value: 'Escuela de la promoción de la salud', isCorrect: false},
-        {value: 'Escuela del ser humano', isCorrect: false},
-        {value: 'humano unita', isCorrect: false}
+        {value: 'Escuela del ser humano', isCorrect: false}
       ]
     },
     {
