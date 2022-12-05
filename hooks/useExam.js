@@ -46,10 +46,9 @@ export default function useExam() {
       const question = questions[index]
       const {answers} = question
 
-      const hasAnswer = Boolean(given)
       const currentAnswer = answers.find(item => item.value === given)
 
-      if (!hasAnswer || !currentAnswer.isCorrect) {
+      if (!currentAnswer || !currentAnswer.isCorrect) {
         wrongAnswers.push({
           given,
           question
